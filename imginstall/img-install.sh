@@ -6,7 +6,7 @@ COIN_DAEMON='/usr/local/bin/ImageCoind'
 COIN_DAEMON_NAME='ImageCoind'
 COIN_CLI_NAME='ImageCoin-cli'
 COIN_CLI='/usr/local/bin/ImageCoin-cli'
-COIN_REPO='https://github.com/mceme/ImageCoin/releases/download/1.0.15/ImageCoin_linux18_x86_x64.tar.xz'
+COIN_REPO='https://github.com/mceme/ImageCoin/releases/download/1.0.19/ImageCoin_linux18x86_64.tar.xz'
 COIN_NAME='ImageCoin'
 COIN_PORT=6998
 
@@ -153,6 +153,8 @@ listen=1
 server=1
 daemon=1
 port=$COIN_PORT
+
+
 EOF
 }
 
@@ -187,6 +189,28 @@ maxconnections=64
 masternode=1
 externalip=$NODEIP:$COIN_PORT
 masternodeprivkey=$COINKEY
+
+checkblocks=6
+checklevel=2
+
+addnode=23.101.61.34
+addnode=79.135.200.25:6998
+addnode=178.46.153.242:6998
+addnode=[2404:9400:10fc:a013::5]:6998
+addnode=[2001:0:9d38:78cf:2cbe:c268:373d:48ef]:6998
+addnode=[2002:96a5:c1e1::96a5:c1e1]:6998
+addnode=[2a03:4000:1a:699::1]:6998
+addnode=[2404:9400:10fc:a013::1e]:6998
+addnode=138.197.98.227:6998
+addnode=[2408:832e:2080:250:90d7:8a11:349b:25de]:6998
+addnode=[2002:4f87:c81c::4f87:c81c]:6998
+addnode=[2001:0:9d38:6abd:2894:9825:4517:5408]:6998
+addnode=[2002:96a5:c129::96a5:c129]:6998
+addnode=[2002:96a5:c1e1::96a5:c1e1]:6998
+addnode=[2001:0:9d38:6abd:24ed:3744:888f:6ee]:6998
+addnode=[2804:7f5:938a:df86:84aa:516f:cce5:a2f3]:6998
+addnode=5.189.162.110:6998
+
 EOF
 }
 
